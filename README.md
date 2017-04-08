@@ -1,1 +1,2 @@
 # weatherfy
+WeatherFy, é uma aplicação web que detecta a localização do usuário e exibe informações sobre o clima da cidade, a previsão do tempo dos próximos quatro dias, a umidade e a pressão atmosférica, bem como a cotação do dólar em relação à moeda utilizada no país da cidade em questão. No WeatherFy também é possível inserir o nome de qualquer outra cidade no mundo e obter as mesmas informações.
