@@ -3,7 +3,7 @@ WeatherFy, é uma aplicação web que detecta a localização do usuário e exib
 
 A aplicação disponibiliza uma caixa de texto onde o usuário pode inserir um número IP no formato (xxx.xxx.xxx.xxx), o nome de qualquer cidade do mundo ou a latitude e longitude no formato (xx.xxxxxxx,xxx.xxxxxxx) e, então, serão retornadas as informações de clima e cotação do dólar referentes à cidade requisitada.
 
-Para acessar a aplicação, deve-se inserir o endereço <http://s3-sa-east-1.amazonaws.com/weatherfy/index.html> no navegador do cliente. Os arquivos referentes ao site estático serão baixados do serviço de armazenamento Amazon Simple Storage Service (AS3) para o computador, e, então, é feita uma requisição a um servidor, apelidado de S1, que é executado na plataforma de computação em nuvem Azure, da Microsoft.
+Para acessar a aplicação, deve-se inserir o endereço &gt;http://s3-sa-east-1.amazonaws.com/weatherfy/index.html&gt; no navegador do cliente. Os arquivos referentes ao site estático serão baixados do serviço de armazenamento Amazon Simple Storage Service (AS3) para o computador, e, então, é feita uma requisição a um servidor, apelidado de S1, que é executado na plataforma de computação em nuvem Azure, da Microsoft.
 
 O S1 é responsável por receber a requisição do navegador e inspecionar  o tipo de busca feita pelo usuário com computador cliente. Caso a cadeia de caracteres seja composta apenas por letras, trata-se do nome de uma cidade; caso contenha quatro pontos,  trata-se de um endereço IP; caso contenha uma vírgula, trata-se da latitude e longitude. Após a verificação, S1 faz uma requisição a outro servidor, apelidado de S2, que é executado na plataforma de computação em nuvem Amazon Web Services (AWS).
 
@@ -12,27 +12,27 @@ Quando S2 recebe a requisição de S1, ele irá utilizar diversas APIs (Applicat
 # apis utilizadas
 Consulta a cidade pelo ip
 
-http://ip-api.com/json/<ip>
+http://ip-api.com/json/&gt;ip&gt;
 
 Consulta o clima pela cidade
 
-http://api.openweathermap.org/data/2.5/weather?q=<cidade>&lang=pt&units=metric&APPID=<apikey>
+http://api.openweathermap.org/data/2.5/weather?q=&gt;cidade&gt;&lang=pt&units=metric&APPID=&gt;apikey&gt;
 
 Consulta o clima pelas coordenadas
 
-http://api.openweathermap.org/data/2.5/weather?lat=<latitude>&lon=<longitude>&lang=pt&units=metric&APPID=<apikey>
+http://api.openweathermap.org/data/2.5/weather?lat=&gt;latitude&gt;&lon=&gt;longitude&gt;&lang=pt&units=metric&APPID=&gt;apikey&gt;
 
 Consulta previsão pela cidade
 
-http://api.openweathermap.org/data/2.5/forecast?q=<cidade>&lang=pt&units=metric&APPID=<apikey>
+http://api.openweathermap.org/data/2.5/forecast?q=&gt;cidade&gt;&lang=pt&units=metric&APPID=&gt;apikey&gt;
 
 Consulta a previsão pelas coordenadas
 
-http://api.openweathermap.org/data/2.5/forecast?lat=<latitude>&lon=<longitude>&lang=pt&units=metric&APPID=<apikey>
+http://api.openweathermap.org/data/2.5/forecast?lat=&gt;latitude&gt;&lon=&gt;longitude&gt;&lang=pt&units=metric&APPID=&gt;apikey&gt;
 
 Consulta o país pelo código de país (que tem na cidade)
 
-http://restcountries.eu/rest/v2/alpha/<codigo>
+http://restcountries.eu/rest/v2/alpha/&gt;codigo&gt;
 
 Consulta cotação do dólar
 
