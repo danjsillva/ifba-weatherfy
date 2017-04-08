@@ -9,7 +9,7 @@ O S1 é responsável por receber a requisição do navegador e inspecionar  o ti
 
 Quando S2 recebe a requisição de S1, ele irá utilizar diversas APIs (Application Programmning Interface) para obter as informações. A função de S2 é recuperar todas as informações solicitadas ao requisitar os serviços das APIs, reunir esses dados e enviá-los de forma organizada para S1. Na Tabela 2 estão descritas as funções e os endereços de cada API utilizada. Todas as APIs, exceto a de cotação do dólar, recebem parâmetros como o número IP, o nome da cidade, a latitude e longitude. A API OpenWeather recebe um parâmetro adicional, uma chave de identificação de usuário porque, embora seja gratuita, não é pública. Foi preciso fazer um registro para receber uma chave que permite a utilização do serviço.
 
-#apis utilizadas
+# apis utilizadas
 Consulta a cidade pelo ip
 http://ip-api.com/json/<ip>
 
@@ -31,7 +31,7 @@ http://restcountries.eu/rest/v2/alpha/<codigo>
 Consulta cotação do dólar
 http://api.fixer.io/latest?base=USD
 
-#tecnologias
+# tecnologias
 S2 e S1 foram implementados através do Node.js, uma plataforma assíncrona de desenvolvimento de aplicações escaláveis de rede baseada na linguagem JavaScript. Foi escolhida por ser uma linguagem totalmente compatível com o proto3 e de sintaxe familiar.
 
 Após recebidas as respostas das APIs, S2 precisa organizar todos esse dados em uma única mensagem estruturada. A função do protobuf nessa aplicação é serializar o dados cidade, pais, clima, previsao e dolar, cada um obtido por meio de uma requisição a determinada API, em uma única mensagem para que eles possam ser transferidos a S1.
