@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+message Mensagem {
+    string cidade = 1;
+    string pais = 2;
+
+    message Clima {
+        string descricao = 1;
+        string icone = 2;
+        float temperatura = 3;
+        float umidade = 4;
+        float pressao = 5;
+        float minima = 6;
+        float maxima = 7;
+    }
+
+    Clima clima = 3;
+
+    message Previsao {
+        string data = 1;
+        string descricao = 2;
+        string icone = 3;
+        float minima = 4;
+        float maxima = 5;
+    }
+
+    repeated Previsao previsao = 4;
+
+    message Dolar {
+        string moeda = 1;
+        float valor = 2;
+    }
+
+    Dolar dolar = 5;
+}

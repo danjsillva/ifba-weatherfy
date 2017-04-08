@@ -1,0 +1,120 @@
+html {
+    min-height: 100%;
+    background-color: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 200;
+    color: #2d3f55;
+}
+
+.wrap {
+    width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logo {
+    margin-right: 10px;
+    margin-top: -50px;
+    float: right;
+    width: 50px;
+}
+
+/*----------------------------------------------------------------------------*/
+.principal  {
+    margin: 64px 0px 16px 0px;
+}
+
+#principal-cidade {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 2em;
+}
+#principal-temp {
+    display: block;
+    font-size: 7em;
+    font-weight: 300;
+    display: block;
+}
+#principal-temp-desc {
+    display: block;
+    font-size: 1.4em;
+    display: block;
+}
+#principal-dolar {
+    display: block;
+    font-size: 7em;
+    font-weight: 300;
+    display: none;
+}
+#principal-dolar-desc {
+    display: block;
+    font-size: 1.4em;
+    display: none;
+}
+
+.detalhes {
+    height: 32px;
+    color: #828b92;
+}
+
+.menu {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.item {
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border: 1px solid;
+}
+.item-ativo {
+    background-color: #2d3f55;
+}
+
+/*----------------------------------------------------------------------------*/
+.previsao {
+    width: 25%;
+    float:left;
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.data {
+    font-size: 1.4em;
+    color: #828b92;
+}
+
+.temp {
+    display: block;
+    line-height: 1.4em;
+}
+
+.max {
+
+}
+
+.min {
+    color: #828b92;
+}
+
+/*----------------------------------------------------------------------------*/
+.form {
+    width: 768px;
+    position: absolute;
+    bottom: 20px;
+}
+#param {
+    width: 460px;
+    text-transform: uppercase;
+    border: 0;
+    text-align: center;
+    font-size: 1.4em;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}

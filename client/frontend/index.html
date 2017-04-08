@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WeatherFy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="principal">
+            <span id="principal-cidade">Cidade, País</span>
+            <span id="principal-temp">0º C</span>
+            <span id="principal-temp-desc">-</span>
+            <span id="principal-dolar">$ 0,00</span>
+            <span id="principal-dolar-desc">dolar comercial</span>
+        </div>
+
+        <div class="detalhes">
+            <span id="detalhes-temp">máxima: - mínima: - umidade: - pressão: -</span>
+            <span id="detalhes-dolar" style="display: none;">hoje</span>
+        </div>
+
+        <div class="menu">
+            <div id="item-1" class="item item-ativo" onclick="setItem(this)"> </div>
+            <div id="item-2" class="item" onclick="setItem(this)"> </div>
+        </div>
+
+        <div class="previsao">
+            <span id="data-1" class="data">Dia</span>
+            <br>
+            <img id="icone-1" src="" alt="">
+            <br>
+            <span id="temp-max-1" class="temp max">0º C</span>
+            <span id="temp-min-1" class="temp min">0º C</span>
+        </div>
+        <div class="previsao">
+            <span id="data-2" class="data">Dia</span>
+            <br>
+            <img id="icone-2" src="" alt="">
+            <br>
+            <span id="temp-max-2" class="temp max">0º C</span>
+            <span id="temp-min-2" class="temp min">0º C</span>
+        </div>
+        <div class="previsao">
+            <span id="data-3" class="data">Dia</span>
+            <br>
+            <img id="icone-3" src="" alt="">
+            <br>
+            <span id="temp-max-3" class="temp max">0º C</span>
+            <span id="temp-min-3" class="temp min">0º C</span>
+        </div>
+        <div class="previsao">
+            <span id="data-4" class="data">Dia</span>
+            <br>
+            <img id="icone-4" src="" alt="">
+            <br>
+            <span id="temp-max-4" class="temp max">0º C</span>
+            <span id="temp-min-4" class="temp min">0º C</span>
+        </div>
+
+        <div class="form">
+            <input type="text" id="param" value="" placeholder="CIDADE, IP OU COORDENADAS" autofocus="true">
+            <!-- <button type="button" onclick="getMensagem(document.getElementById('param').value)">OK</button> -->
+        </div>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
