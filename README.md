@@ -11,24 +11,31 @@ Quando S2 recebe a requisição de S1, ele irá utilizar diversas APIs (Applicat
 
 # apis utilizadas
 Consulta a cidade pelo ip
+
 http://ip-api.com/json/<ip>
 
 Consulta o clima pela cidade
+
 http://api.openweathermap.org/data/2.5/weather?q=<cidade>&lang=pt&units=metric&APPID=<apikey>
 
 Consulta o clima pelas coordenadas
+
 http://api.openweathermap.org/data/2.5/weather?lat=<latitude>&lon=<longitude>&lang=pt&units=metric&APPID=<apikey>
 
 Consulta previsão pela cidade
+
 http://api.openweathermap.org/data/2.5/forecast?q=<cidade>&lang=pt&units=metric&APPID=<apikey>
 
 Consulta a previsão pelas coordenadas
+
 http://api.openweathermap.org/data/2.5/forecast?lat=<latitude>&lon=<longitude>&lang=pt&units=metric&APPID=<apikey>
 
 Consulta o país pelo código de país (que tem na cidade)
+
 http://restcountries.eu/rest/v2/alpha/<codigo>
 
 Consulta cotação do dólar
+
 http://api.fixer.io/latest?base=USD
 
 # tecnologias
